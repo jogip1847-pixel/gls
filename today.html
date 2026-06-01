@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        /* container의 display를 flex로 변경 */
+        display: flex;
+
+        border: 10px solid red;
+        height: 300px;
+        margin: 10px;
+      }
+      .one {
+        border: 10px solid blue;
+      }
+      .two {
+        border: 10px solid green;
+      }
+      .three {
+        border: 10px solid pink;
+      }
+
+      .row {
+        /* 자식 요소들을 수평으로 배치 */
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+      }
+      .column {
+        /* 자식 요소들을 수직으로 배치 */
+        flex-direction: column;
+        justify-content: start;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container row">
+      <div class="one">one</div>
+      <div class="two">two</div>
+      <div class="three">three</div>
+    </div>
+
+    <div class="container column">
+      <div class="one">one</div>
+      <div class="two">two</div>
+      <div class="three">three</div>
+    </div>
+  </body>
+</html>
